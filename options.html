@@ -1,0 +1,45 @@
+<html>
+  <title>The Going Merry On Board</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <body>
+    <legend class="page-header">Going Merry</legend>
+    <div id="reminder-section" class="section-panel">
+      <legend class="section-title">The Going Merry Reminder<span class="keep_right title_button"><a href="#modal-one" class="btn">Create New</a></span></legend>
+      <div class="modal" id="modal-one" aria-hidden="true">
+        <div id='new' class="sub-section-panel modal-dialog">
+          <form id="new_form" data-purpose="create">
+            <legend class="sub-section-title">New Reminder<span>Please fill all the texts in the fields.</span></legend>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input class="user-input" id="title" name="title" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label for="details">Details</label>
+              <textarea class="user-input" id="details" name="details" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="due">Due Date</label>
+              <input class="user-input" id="due" name="due" type="date" />
+            </div>
+
+            <div class="form-group">
+              <div class="submit-area">
+                <small>are you done?</small>
+                <input class="submit" type="submit" value="Submit" />
+                <a href="#" class="btn" id="reset_form">Cancel</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id='list' class="sub-section-panel">
+        <legend class="sub-section-title">Reminder List</legend>
+        <div id="list_items" class="podify"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/options.js"></script>
+  </body>
+</html>

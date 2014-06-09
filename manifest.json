@@ -1,0 +1,25 @@
+{
+  // These are required properties
+  "manifest_version" : 2,
+  "name" : "Going Merry",
+  "version" : "1.0",
+
+  // optional
+  "description" : "The Golden ship to sail with you while you surf through chrome.",
+  "author" : "thegendaryl",
+  "icons": { "128": "images/solitude.png" },
+  
+  "permissions" : [
+    "storage",
+    "unlimitedStorage",
+    "notifications"
+  ],
+
+  "browser_action" : {
+    "default_icon" : { "19": "images/solitude.png" },
+    "default_popup" : "popup.html",
+    "default_title" : "Going Merry"
+  },
+  
+  "options_page" : "options.html"
+}
