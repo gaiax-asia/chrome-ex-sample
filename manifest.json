@@ -7,7 +7,7 @@
   // optional
   "description" : "The Golden ship to sail with you while you surf through chrome.",
   "author" : "thegendaryl",
-  "icons": { "128": "images/solitude.png" },
+  "icons": { "128": "images/solitude.png" }, // Disclaimer: image icon is not mine. credit goes to the owner.
   
   "permissions" : [
     "storage",
